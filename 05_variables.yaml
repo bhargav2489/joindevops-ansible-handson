@@ -7,4 +7,4 @@
   tasks:
   - name: print the local variables
     debug:
-    msg: "i have joined {{course}} course , my trainer is {{trainer}} and it is for {{duration}}"
+      msg: "i have joined {{course}} course , my trainer is {{trainer}} and it is for {{duration}}"
