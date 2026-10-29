@@ -1,13 +1,13 @@
 - name: nginx installation
   hosts: worker
   tasks:
-    - name: install nginx
-      package:
-        name: nginx
-        state: present
+  - name: install nginx
+    package:
+      name: nginx
+      state: present
 
-    - name: start the serveice
-      serveice:
-        name: nginx
-        state: started
-        enabled: yes
+  - name: start the serveice
+    serveice:
+      name: nginx
+      state: started
+      enabled: yes
