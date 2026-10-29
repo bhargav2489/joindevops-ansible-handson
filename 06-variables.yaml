@@ -18,6 +18,6 @@
 
   - name: Student2
     vars:
-      duration: "10min"
+      duration: "5min"
     ansible.builtin.debug:
       msg: "i have joined {{ course }} course , my trainer is {{ trainer }} and it is for {{ duration }}"
