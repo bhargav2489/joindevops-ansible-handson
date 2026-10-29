@@ -1,5 +1,6 @@
 - name: nginx installation
   hosts: worker
+  become: yes
   tasks:
   - name: install nginx
     package:
