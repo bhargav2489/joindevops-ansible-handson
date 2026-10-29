@@ -1,0 +1,10 @@
+- name: demo on local variables
+  hosts: local
+  connection: local
+  course: "devops"
+  trainer: "siva kumar"
+  duration: 30min
+  tasks:
+  - name: print the local variables
+    debug:
+    msg: "i have joined {{course}} course , my trainer is {{trainer}} and it is for {{duration}}"
