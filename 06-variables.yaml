@@ -1,0 +1,23 @@
+- name: Demo on tasklevel variables
+  hosts: local
+  connection: local
+  vars:
+    course: "devops"
+    trainer: "siva kumar"
+    duration: "30 days"
+  tasks:
+  - name: whole Batch level
+    ansible.builtin.debug:
+      msg: "i have joined {{ course }} course , my trainer is {{ trainer }} and it is for {{ duration }}"
+
+  - name: Student1
+    vars:
+      duration: "10min"
+    ansible.builtin.debug:
+      msg: "i have joined {{ course }} course , my trainer is {{ trainer }} and it is for {{ duration }}"
+
+  - name: Student2
+    vars:
+      duration: "10min"
+    ansible.builtin.debug:
+      msg: "i have joined {{ course }} course , my trainer is {{ trainer }} and it is for {{ duration }}"
