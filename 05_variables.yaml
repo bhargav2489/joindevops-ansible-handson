@@ -1,4 +1,4 @@
-- name: demo on local variables
+- name: Demo on local variables
   hosts: local
   connection: local
   vars:
@@ -6,6 +6,6 @@
     trainer: "siva kumar"
     duration: 30min
   tasks:
-  - name: print the local variables
-    debug:
-      msg: "i have joined {{course}} course , my trainer is {{trainer}} and it is for {{duration}}"
+  - name: Print the local variables
+    ansible.builtin.debug:
+      msg: "i have joined {{ course }} course , my trainer is {{ trainer }} and it is for {{ duration }}"
