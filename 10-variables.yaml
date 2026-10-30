@@ -1,4 +1,4 @@
-- name: print greeting
+- name: print greeting #passing argments from runline
   hosts: local
   connection: local
   tasks:
