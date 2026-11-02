@@ -5,9 +5,9 @@
   vars:
     packages:
     - { name: 'nginx', state: 'absent' }
-    - { name: 'mysql', state: 'present' }
-    - { name: 'git', state: 'present' }
-    - { name: 'net-tools', state: 'present' }
+    - { name: 'mysql', state: 'absent' }
+    - { name: 'git', state: 'absent' }
+    - { name: 'net-tools', state: 'absent' }
     - { name: 'htop', state: 'absent' }
   tasks:
   - name: install packages
