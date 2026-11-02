@@ -11,9 +11,7 @@
     - { name: 'htop', state: 'absent' }
   tasks:
   - name: install packages
-    debug:
-      msg: "{{ item }}"
-    # package:
-    #   name: "{{ item.name }}"
-    #   state: "{{ item.state }}"
+    package:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop: "{{ packages }}"
