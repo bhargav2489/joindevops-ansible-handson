@@ -1,0 +1,11 @@
+- name: demo on loops
+  hosts: local
+  connections: local
+  tasks:
+  - name: print the names
+    debug:
+      msg: "name of the item : {{ item }}"
+    loop:
+    - Linux
+    - Shell
+    - ansible
