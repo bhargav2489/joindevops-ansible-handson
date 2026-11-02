@@ -14,18 +14,18 @@
     debug:
       msg: "Hi, {{ person_name | default('Ramesh') }}"
   
-  # - name: convert string to list
-  #   debug:
-  #     msg: "Topics are: {{ topics | split(',') | trim }} "
+  - name: convert string to list
+    debug:
+      msg: "Topics are: {{ topics | split(',') | trim }} "
 
-  # - name: convert list to string
-  #   debug:
-  #     msg: "Full name: {{ names | join(' ') }}"
+  - name: convert list to string
+    debug:
+      msg: "Full name: {{ names | join(' ') }}"
 
-  # - name: convert to lower case
-  #   debug:
-  #     msg: "Topic: {{ topic | lower }}"
+  - name: convert to lower case
+    debug:
+      msg: "Topic: {{ topic | lower }}"
   
-  # - name: convert to string to int
-  #   debug:
-  #     msg: "Duration: {{ duration | int }}"
+  - name: convert to string to int
+    debug:
+      msg: "Duration: {{ duration | int }}"
