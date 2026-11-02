@@ -12,7 +12,7 @@
   tasks:
   - name: print the name
     debug:
-    msg: "Hi, {{ person_name }}"
+      msg: "Hi, {{ person_name }}"
       # msg: "Hi, {{ person_name | default('Ramesh') }}"
   
   # - name: convert string to list
