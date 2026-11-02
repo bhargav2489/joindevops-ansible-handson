@@ -13,7 +13,6 @@
     more_details: # dictionary/map
       trainer: sivakumar
       months: 4
-      months: 5
     exact_duration_in_months: 4.5 
   tasks:
   - name: print info and type
