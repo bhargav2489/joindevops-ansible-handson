@@ -29,3 +29,7 @@
   - name: convert to string to int
     debug:
       msg: "Duration: {{ duration | int }}"
+
+  - name: convert to string to int
+    debug:
+      msg: "Duration: {{ duration }}"
