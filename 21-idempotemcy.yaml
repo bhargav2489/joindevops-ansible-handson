@@ -1,0 +1,8 @@
+- name: creating user #to check idempotency
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: creating user
+    ansible.builtin.user:
+      name: roboshop #this is the username
